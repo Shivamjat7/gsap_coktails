@@ -15,6 +15,7 @@ export default function page() {
      <main>
       <Navbar/>
       <Hero/>
+      <div className="h-dvh bg-black"></div>
      </main>
   )
 }
