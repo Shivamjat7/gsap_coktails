@@ -48,32 +48,39 @@ export default function Hero() {
     const startValue = isMobile?'top 50%':'center 60%';
     const endValue = isMobile?'120% top':'bottom top';
 
-    const tl= gsap.timeline({
-        scrollTrigger:{
-            trigger:'video',
-            start:startValue,
-            end:endValue,
-            scrub:true,
-            pin:true,
-        
-            
-        }
+   
+const video = videoRef.current;
 
+if (!video) return;
+
+video.pause();
+video.currentTime = 0;
+
+const createAnimation = () => {
+  gsap.to(video, {
+    currentTime: video.duration,
+
+    ease: "none",
+
+    scrollTrigger: {
+      trigger: "video",
+      start: startValue,
+      end: endValue,
+      scrub: true,
+      pin: true,
     
-    })
-    videoRef.current.pause();
-    videoRef.current.currentTime=0;
-    if(videoRef.current){
-        
-    videoRef.current.onloadedmetadata=()=>{
-        tl.to(videoRef.current,{
-            currentTime:videoRef.current?.duration
-        })
-    }}
-  
+    },
+  });
+};
 
-
-
+if (video.readyState >= 1) {
+  createAnimation();
+} else {
+  video.addEventListener(
+    "loadedmetadata",
+    createAnimation
+  );
+}
 
 
 
@@ -84,7 +91,7 @@ export default function Hero() {
   return (
     <>
     <section id="hero" className="noisy">
-      <h1 className="title uppercase">Mojito</h1>
+      <h1 className="title uppercase"> Mojito</h1>
       <Image
         className="w-auto h-auto left-leaf"
         src={"/images/hero-left-leaf.png"}

@@ -29,7 +29,7 @@ export default function Navbar() {
     
   },[]);
   return (
-    <nav>
+    <nav className="px-2">
       <div>
         <a href="#home" className="flex items-center gap-2">
           <Image alt="logo" src={"/images/logo.png"} width={20} height={20} />
@@ -37,7 +37,7 @@ export default function Navbar() {
         </a>
         <ul>
           {navLinks.map((link) => (
-            <li key={link.id}>{link.title}</li>
+            <li className="hover:scale-105 hover:text-amber-200 active:scale-95 " key={link.id}>{link.title}</li>
           ))}
         </ul>
       </div>
