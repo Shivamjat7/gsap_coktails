@@ -18,57 +18,57 @@ const navLinks = [
 ];
 
 const cocktailLists = [
- {
-	name: "Chapel Hill Shiraz",
-	country: "AU",
-	detail: "Battle",
-	price: "$10",
- },
- {
-	name: "Caten Malbee",
-	country: "AU",
-	detail: "Battle",
-	price: "$49",
- },
- {
-	name: "Rhino Pale Ale",
-	country: "CA",
-	detail: "750 ml",
-	price: "$20",
- },
- {
-	name: "Irish Guinness",
-	country: "IE",
-	detail: "600 ml",
-	price: "$29",
- },
+  {
+    name: "Savita Bhabhi Special",
+    country: "IN",
+    detail: "180 ml",
+    price: "₹240",
+  },
+  {
+    name: "Tau Ki Desi Mix",
+    country: "IN",
+    detail: "375 ml",
+    price: "₹540",
+  },
+  {
+    name: "Padosan Special",
+    country: "IN",
+    detail: "750 ml",
+    price: "₹820",
+  },
+  {
+    name: "Bewafa Ex",
+    country: "IN",
+    detail: "650 ml",
+    price: "₹360",
+  },
 ];
 
 const mockTailLists = [
- {
-	name: "Tropical Bloom",
-	country: "US",
-	detail: "Battle",
-	price: "$10",
- },
- {
-	name: "Passionfruit Mint",
-	country: "US",
-	detail: "Battle",
-	price: "$49",
- },
- {
-	name: "Citrus Glow",
-	country: "CA",
-	detail: "750 ml",
-	price: "$20",
- },
- {
-	name: "Lavender Fizz",
-	country: "IE",
-	detail: "600 ml",
-	price: "$29",
- },
+  {
+    name: "Chachi Ki Lassi",
+    country: "IN",
+    detail: "300 ml",
+    price: "₹99",
+  },
+  {
+    name: "Chacha ke Ganne ka juice",
+    country: "IN",
+    detail: "350 ml",
+    price: "₹119",
+  },
+  {
+    name: "Padosan ka Pyaar",
+    country: "IN",
+    detail: "400 ml",
+    price: "₹139",
+  },
+  {
+    name: "Ex ki yaad",
+    country: "IN",
+    detail: "300 ml",
+    price: "₹109",
+  },
 ];
 
 const profileLists = [
