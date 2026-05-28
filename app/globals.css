@@ -210,6 +210,7 @@ body {
                     }
                 }
             }
+            
         }
 
         .badge {
@@ -225,6 +226,9 @@ body {
 
             img {
                 @apply object-cover w-full h-full;
+            }
+            .hover-effect {
+                @apply hover:scale-105;
             }
         }
 

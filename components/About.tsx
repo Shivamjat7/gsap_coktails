@@ -13,6 +13,8 @@ export default function About() {
             scrollTrigger:{
                 trigger:'#about',
                 start:'top center',
+                
+                
 
             }
         })
@@ -77,8 +79,9 @@ export default function About() {
             />
           </div>
           <div className="md:col-span-6">
-            <div className="noisy" />
+            <div className="noisy " />
             <Image
+             className =''
               src={"/images/abt2.png"}
               alt="grid-image-1"
               width={200}
