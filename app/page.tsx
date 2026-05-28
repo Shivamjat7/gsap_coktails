@@ -1,26 +1,32 @@
 'use client'
-import { useGSAP } from '@gsap/react';
 
-import gsap from 'gsap'
-import { ScrollTrigger, SplitText } from 'gsap/all';
-import Navbar from './../components/Navbar';
-import Hero from './../components/Hero';
-import Cocktails from '@/components/Cocktails';
-import About from '@/components/About';
-import Art from '@/components/Art';
+import gsap from "gsap";
+import { ScrollTrigger, SplitText } from "gsap/all";
+import Navbar from "./../components/Navbar";
+import Hero from "./../components/Hero";
+import Cocktails from "@/components/Cocktails";
+import About from "@/components/About";
+import Art from "@/components/Art";
+import Menu from "@/components/Menu";
+import Contact from "./../components/contact";
 
-gsap.registerPlugin(ScrollTrigger,SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 export default function page() {
-  
-  
-  
   return (
-     <main>
-      <Navbar/>
-      <Hero/>
-      <Cocktails/>
-      <About/>
-      <Art/>
-     </main>
-  )
+    <main>
+      <header>
+        <Navbar />
+      </header>
+      
+        <Hero />
+        <Cocktails />
+        <About />
+        <Art />
+        <Menu />
+      
+      <footer>
+        <Contact />
+      </footer>
+    </main>
+  );
 }

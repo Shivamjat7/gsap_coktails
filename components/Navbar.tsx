@@ -51,7 +51,9 @@ export default function Navbar() {
         </a>
         <ul className="">
           {navLinks.map((link) => (
-            <li className=" nav-links hover:scale-105 hover:text-amber-200 active:scale-95 " key={link.id}>{link.title}</li>
+            <li  className=" nav-links hover:scale-105 hover:text-amber-200 active:scale-95 " key={link.id}>
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
           ))}
         </ul>
       </div>

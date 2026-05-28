@@ -1,3 +1,4 @@
+'use client'
 import { featureLists, goodLists } from '@/constants/constants';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
@@ -9,7 +10,29 @@ export default function Art() {
     const isMobile = useMediaQuery({maxWidth:767});
     useGSAP(()=>{
         const start =isMobile?'top 20%':'top top';
-        const maskScrollTimeline = gsap.timeline({
+        const entryScrollTimeLine = gsap.timeline({
+            scrollTrigger:{
+                trigger:'#art',
+                start:'top 80%',
+                end:"top 30%",
+                scrub:true,
+            }
+        })
+        .from('.masked-img',{
+            opacity:0,
+            yPercent:30,
+            scale:0.90,
+            ease:'power1.inOut'
+        })
+        .from('.will-fade',{
+            opacity:0,
+            yPercent:50,
+            delay:1,
+            stagger:0.5,
+            ease:'power1.inOut'
+        })
+        
+        const exitScrollTimeline = gsap.timeline({
             scrollTrigger:{
                 trigger:'#art',
                 start,

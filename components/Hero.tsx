@@ -106,13 +106,13 @@ if (video.readyState >= 1) {
   return (
     <>
     <section id="hero" className="noisy ">
-      <div className="flex-cente  absolute top-[18%] left-[32%] ">
+      <div className="flex-center  absolute top-[16%] left-[19%] ">
        <div className="flex justify-start">
-        <h2 id="shivam" className="font-modern-negra text-3xl text-gradient">Shivam's Special</h2>
+        <h2 id="shivam" className="font-modern-negra text-4xl text-gradient">Shivam's Special</h2>
        </div>
         
       </div>
-      <h1 className="title uppercase"> Juice</h1>
+      <h1 className="title uppercase"> Mojito</h1>
       
       <Image
         className="w-auto md:w-[10%] h-auto left-leaf"

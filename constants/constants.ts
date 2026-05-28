@@ -8,7 +8,7 @@ const navLinks = [
 	title: "About Us",
  },
  {
-	id: "work",
+	id: "art",
 	title: "The Art",
  },
  {
@@ -17,57 +17,56 @@ const navLinks = [
  },
 ];
 
-const cocktailLists = [
-  {
-    name: "Savita Bhabhi Special",
-    country: "IN",
-    detail: "180 ml",
-    price: "₹240",
-  },
-  {
-    name: "Tau Ki Desi Mix",
-    country: "IN",
-    detail: "375 ml",
-    price: "₹540",
-  },
-  {
-    name: "Padosan Special",
-    country: "IN",
-    detail: "750 ml",
-    price: "₹820",
-  },
-  {
-    name: "Bewafa Ex",
-    country: "IN",
-    detail: "650 ml",
-    price: "₹360",
-  },
-];
-
 const mockTailLists = [
   {
-    name: "Chachi Ki Lassi",
+    name: "Kashmir Bloom",
     country: "IN",
     detail: "300 ml",
     price: "₹99",
   },
   {
-    name: "Chacha ke Ganne ka juice",
-    country: "IN",
+    name: "Milan Citrus",
+    country: "IT",
     detail: "350 ml",
     price: "₹119",
   },
   {
-    name: "Padosan ka Pyaar",
-    country: "IN",
+    name: "Kyoto Mist",
+    country: "JP",
     detail: "400 ml",
     price: "₹139",
   },
   {
-    name: "Ex ki yaad",
-    country: "IN",
+    name: "Dubai Gold",
+    country: "AE",
     detail: "300 ml",
     price: "₹109",
+  },
+];
+const cocktailLists = [
+  {
+    name: "Bombay Noir",
+    country: "IN",
+    detail: "180 ml",
+    price: "₹240",
+  },
+  {
+    name: "Tokyo Velvet",
+    country: "JP",
+    detail: "375 ml",
+    price: "₹540",
+  },
+  {
+    name: "Monsoon Reserve",
+    country: "IN",
+    detail: "750 ml",
+    price: "₹820",
+  },
+  {
+    name: "Manhattan Ember",
+    country: "US",
+    detail: "650 ml",
+    price: "₹360",
   },
 ];
 

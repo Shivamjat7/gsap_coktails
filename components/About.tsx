@@ -52,11 +52,10 @@ export default function About() {
             <h2 className="about-title">Where every detail matters -from muddle to garnish</h2>
           </div>
           <div className="sub-content ">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio fugiat magni, fugit officiis amet qui deleniti omnis
-              ipsum quidem aspernatur iste eos quibusdam assumenda harum nemo ex
-              voluptatum enim rem.
+            <p className="leading">
+              we create cocktails that feel both artistic and indulgent. From handcrafted infusions to signature smoky finishes, every creation is made to elevate the moment. Our space is built for conversations, celebrations, and the kind of evenings that stay with you long after the last sip.
+
+
             </p>
             <div>
               <p className="md:text-3xl text-xl font-bold">
